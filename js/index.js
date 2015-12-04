@@ -1,7 +1,7 @@
 var meter = 0;
 var bpm = 80;
 var division = 4;
-var soundID = "Thunder";
+var soundID="woodblock";
 $(".bpm").html(bpm);
 
 $(document).ready(function() {
