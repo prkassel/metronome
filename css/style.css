@@ -1,0 +1,14 @@
+.metronome {
+  height: 400px;
+  width: 400px; 
+  background-color: gray; 
+  border-radius: 200px; 
+  margin-top: 80px; 
+  padding-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red {
+  color: red; 
+}
