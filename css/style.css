@@ -1,14 +1,76 @@
+p {
+  font-size: 16px; 
+}
+
 .metronome {
-  height: 400px;
-  width: 400px; 
-  background-color: gray; 
-  border-radius: 200px; 
+  height: 550px;
+  width: 550px; 
+  background-color: black; 
   margin-top: 80px; 
-  padding-top: 80px;
+  padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.red {
-  color: red; 
+.beatbox {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  background-color: yellow;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#playbuttons {
+  width: 75px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.console {
+  padding: 20px;
+  height: 450px;
+  width: 440px;
+  border-radius: 20px;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.lower-console {
+  margin-top: 20px;
+  height: 150px;
+  width: 410px; 
+}
+
+.tempo {
+  height: 150px;
+  width: 200px; 
+  border-radius: 5px; 
+  float: left;
+}
+
+.bpm_box {
+  width: 90px; 
+  float: left;
+}
+
+.meterview {
+  padding-top: 45px;
+  width: 88px; 
+  float: left; 
+}
+#playbuttons {
+  margin-top: 10px;
+}
+
+#slower {
+  margin-right: 10px; 
+}
+
+.meterbox {
+  height: 150px;
+  width: 200px;
+  float: left;
 }
