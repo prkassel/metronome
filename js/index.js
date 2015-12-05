@@ -3,6 +3,7 @@ var meter = 4;
 var division = 4;
 var soundID="woodblock";
 var downbeat="woodblock1";
+var scrolling="scrolling";
 var count = 1;
 var playing;
 
@@ -33,6 +34,8 @@ function loadSound() {
   createjs.Sound.registerSound("https://raw.githubusercontent.com/prkassel/metronome/master/sounds/woodblock.mp3", downbeat);
   
  createjs.Sound.registerSound("https://raw.githubusercontent.com/prkassel/metronome/master/sounds/woodblock1.mp3", soundID);
+
+createjs.Sound.registerSound("../sounds/scroll.mp3", scrolling);
 }
   
 function metronome(bpm, meter, count) {
