@@ -4,10 +4,26 @@ var division = 4;
 var soundID="woodblock";
 var downbeat="woodblock1";
 var count = 1;
+
+$(document).ready(function() {
+
 $(".bpm").html(bpm);
 $(".count").html(count);
 $(".meter").html(meter + " / 4");
-$(document).ready(function() {
+
+
+$( "#slider" ).slider({
+      range: "min",
+      value: 80,
+      min: 30,
+      max: 200,
+      slide: function( event, ui ) {
+        bpm = ui.value;
+        $( ".bpm" ).html(ui.value);
+        return bpm;
+      }
+    });
+
 function loadSound() {
   createjs.Sound.registerSound("https://raw.githubusercontent.com/prkassel/metronome/master/sounds/woodblock.mp3", downbeat);
   
@@ -34,7 +50,7 @@ function metronome(bpm, meter, count) {
       count ++;
     }
   };
-    var speed = window.setInterval(beatTime, milliSec);
+    var speed = window.setInterval(beatTime(bpm), milliSec);
   $("#stopMet").click(function() {
     clearInterval(speed);
     $("#startMet").removeClass("hidden");
@@ -46,17 +62,6 @@ $("#startMet").click(function(){
     metronome(bpm, meter, count);
   });
   
-  loadSound();
-  $("#faster").click(function() {
-    bpm = bpm + 1;
-    $(".bpm").html(bpm);
-    return bpm;
-  });
-  $("#slower").click(function() {
-    bpm = bpm - 1;
-    $(".bpm").html(bpm);
-    return bpm;
-  });
   
   $("#lessMeter").click(function() {
     if(meter > 1) {
@@ -73,5 +78,7 @@ $("#startMet").click(function(){
     return meter;
    }
   });
+
+  loadSound();
   
 });

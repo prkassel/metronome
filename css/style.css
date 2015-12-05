@@ -91,3 +91,9 @@ p {
   width: 190px;
   float: left;
 }
+
+#slider { 
+  width: 150px;
+  margin-left: 15px;
+  margin-top: 20px; 
+}
