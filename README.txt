@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/prkassel/pen/xZxZwJ.
+Simple javascript metronome by Philip Kassel. You can view the demo at http://phil-kassel.com 
 
  
